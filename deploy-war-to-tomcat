@@ -9,7 +9,7 @@ node{
    stage('Deploy to Tomcat'){
       
       sshagent(['tomcat-dev']) {
-         sh 'scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/pipeline/target/*.war ubuntu@172.31.28.208:/opt/tomcat8/webapps'
+         sh 'scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/pipeline/target/*.war ubuntu@172.31.26.116:/opt/tomcat8/webapps'
       }
    }
    stage('Email Notification'){
