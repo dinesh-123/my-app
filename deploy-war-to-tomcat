@@ -11,4 +11,6 @@ node{
       sshagent(['tomcat-dev']) {
          sh 'scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/pipeline/target/*.war ubuntu@172.31.26.116:/opt/tomcat8/webapps'
       }
+      }
+    }
   
