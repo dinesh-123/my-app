@@ -21,7 +21,6 @@
 			<version>3.0.1</version>
 			<!-- <scope>provided</scope> -->
 			<!-- demo on gitwebhook -->
-			<!-- Success -->
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
