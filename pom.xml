@@ -22,7 +22,7 @@
 			<!-- <scope>provided</scope> -->
 			<!-- demo on gitwebhook -->
 			<!-- Success -->
-			<!-- demo on poll scm -->
+			<!-- demo on poll scm --->
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
