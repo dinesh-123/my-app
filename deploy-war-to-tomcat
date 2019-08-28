@@ -7,7 +7,6 @@ node{
       sh "/usr/share/maven/bin/mvn package"
    }
    stage('Deploy to Tomcat'){
-      
       sshagent(['tomcat-dev']) {
          sh 'scp -o StrictHostKeyChecking=no target/*.war ubuntu@172.31.20.40:/var/lib/tomcat8/webapps'
       }
