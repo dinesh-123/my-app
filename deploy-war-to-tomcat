@@ -8,7 +8,7 @@ node{
    }
    stage('Deploy to Tomcat'){
    
-      sshagent(['tomcat-dev']) {
+      sshagent(['Tomcat-dev']) {
          sh 'scp -r /var/lib/jenkins/workspace/Groovy Job/target ubuntu@172.31.41.107:/var/lib/tomcat8/webapps/'
       }
     }
