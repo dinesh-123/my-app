@@ -9,7 +9,7 @@ node{
    stage('Deploy to Tomcat'){
    
       sshagent(['Tomcat-dev']) {
-          sh 'scp -rp /var/lib/jenkins/workspace/groovyJob/target/myweb-0.0.7-SNAPSHOT.war ubuntu@172.31.19.103:/var/lib/tomcat8/webapps/'
+          sh 'scp -rp /var/lib/jenkins/workspace/groovyJob/target/myweb-0.0.7-SNAPSHOT.war ubuntu@172.31.19.103:/var/lib/tomcat8/webapps'
       }
     }
   }
